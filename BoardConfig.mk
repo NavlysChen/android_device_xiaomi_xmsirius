@@ -92,11 +92,47 @@ RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TW_MAX_BRIGHTNESS := 4095
+TW_DEFAULT_BRIGHTNESS := 1500
 TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TWRP_INCLUDE_LOGCAT := true
 TW_USE_LEDS_HAPTICS := true
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
+
+SHRP_PATH := device/xiaomi/xmsirius
+
+# Maintainer name
+SHRP_MAINTAINER := uixdess
+
+# Device codename
+SHRP_DEVICE_CODE := sirius
+
+# put this 0 if device has no EDL mode
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+
+# Put 0 to disable flashlight
+SHRP_FLASH := 1
+
+# These are led paths, find yours then put here
+SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
+SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
+SHRP_FONP_3 := /sys/class/leds/led:switch_0/brightness
+
+# Max Brightness of LED
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+
+# SHRP Padding Flag
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
