@@ -156,3 +156,9 @@ SHRP_REC := /dev/block/bootdevice/by-name/recovery
 # SHRP Padding Flag
 SHRP_STATUSBAR_RIGHT_PADDING := 0
 SHRP_STATUSBAR_LEFT_PADDING := 0
+
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section]
+SHRP_REC_TYPE := Treble
+
+# Recovery Type (It can be A/B or A_only) [Only for About Section]
+SHRP_DEVICE_TYPE := A_Only
