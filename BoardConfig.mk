@@ -136,7 +136,7 @@ SHRP_PATH := device/xiaomi/xmsirius
 SHRP_MAINTAINER := uixdess
 
 # Device codename
-SHRP_DEVICE_CODE := sirius
+SHRP_DEVICE_CODE := xmsirius
 
 # put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 1
