@@ -183,3 +183,6 @@ SHRP_NOTCH := true
 
 # For dark mode
 SHRP_DARK := true
+
+# For official builds
+SHRP_OFFICIAL := true
