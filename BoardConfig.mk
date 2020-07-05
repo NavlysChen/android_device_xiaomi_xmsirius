@@ -187,3 +187,6 @@ SHRP_DARK := true
 
 # For official builds
 SHRP_OFFICIAL := true
+
+# Force mount system in /system despite SAR policy, useful for maintaining backwards compatibility and/or Samsung devices.
+SHRP_NO_SAR_AUTOMOUNT := true
